@@ -66,6 +66,6 @@ class T547 : public PollingComponent, public display::DisplayBuffer {
 
 static void feed_watchdog_timer()
 {
-  App.feed_wdt();
+  esphome::App.feed_wdt();
 }
 #endif  // USE_ESP32_FRAMEWORK_ARDUINO
