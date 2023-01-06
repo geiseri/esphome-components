@@ -4,6 +4,7 @@
 #include "esphome/core/hal.h"
 #include "esphome/core/version.h"
 #include "esphome/components/display/display_buffer.h"
+#include "esphome/core/application.h"
 
 #include "epd_driver.h"
 
@@ -63,4 +64,8 @@ class T547 : public PollingComponent, public display::DisplayBuffer {
 }  // namespace T547
 }  // namespace esphome
 
+static void feed_watchdog_timer()
+{
+  App.feed_wdt();
+}
 #endif  // USE_ESP32_FRAMEWORK_ARDUINO

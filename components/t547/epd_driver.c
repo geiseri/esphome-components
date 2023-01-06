@@ -15,6 +15,7 @@
 
 #include "ed097oc4.h"
 
+extern void feed_watchdog_timer(); 
 
 // number of bytes needed for one line of EPD pixel data.
 #define EPD_LINE_BYTES EPD_WIDTH / 4
@@ -136,6 +137,7 @@ void epd_push_pixels(Rect_t area, short time, int color)
     write_row(time * 10);
 
     epd_end_frame();
+    feed_watchdog_timer();
 }
 
 void epd_clear_area(Rect_t area)
