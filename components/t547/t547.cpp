@@ -101,7 +101,7 @@ void T547::clean() {
 }  // namespace T547
 }  // namespace esphome
 
-void feed_watchdog_timer() {
+static void feed_watchdog_timer() {
   esphome::App.feed_wdt();
 }
 #endif  // USE_ESP32_FRAMEWORK_ARDUINO
