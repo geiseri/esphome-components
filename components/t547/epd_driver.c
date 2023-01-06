@@ -15,8 +15,6 @@
 
 #include "ed097oc4.h"
 
-extern void feed_watchdog_timer(); 
-
 // number of bytes needed for one line of EPD pixel data.
 #define EPD_LINE_BYTES EPD_WIDTH / 4
 

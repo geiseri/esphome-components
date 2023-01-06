@@ -12,6 +12,8 @@ extern "C" {
 
 #include <esp_attr.h>
 
+extern void feed_watchdog_timer(); 
+
 
 /// Width of the display area in pixels.
 #define EPD_WIDTH 960

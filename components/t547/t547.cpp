@@ -2,6 +2,8 @@
 #include "esphome/core/log.h"
 #include "esphome/core/application.h"
 #include "esphome/core/helpers.h"
+#include "esphome/core/application.h"
+
 #include "logo.h"
 
 #ifdef USE_ESP32_FRAMEWORK_ARDUINO
