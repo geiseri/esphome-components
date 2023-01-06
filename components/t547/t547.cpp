@@ -8,6 +8,10 @@
 
 #include <esp32-hal-gpio.h>
 
+void feed_watchdog_timer() {
+  esphome::App.feed_wdt();
+}
+
 namespace esphome {
 namespace t547 {
 
@@ -101,7 +105,4 @@ void T547::clean() {
 }  // namespace T547
 }  // namespace esphome
 
-static void feed_watchdog_timer() {
-  esphome::App.feed_wdt();
-}
 #endif  // USE_ESP32_FRAMEWORK_ARDUINO

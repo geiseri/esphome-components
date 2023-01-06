@@ -10,6 +10,8 @@
 
 #ifdef USE_ESP32_FRAMEWORK_ARDUINO
 
+static void feed_watchdog_timer();
+
 namespace esphome {
 namespace t547 {
 
